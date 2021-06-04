@@ -6,7 +6,10 @@
 
 /* fonts */
 
-/* mobile styles */
+/* mobile styles */ /* AMN - We will define first mobile */
+
+/* AMN - As we use mobile first approach we don't worry about mobile and define media
+for larger screens */
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
