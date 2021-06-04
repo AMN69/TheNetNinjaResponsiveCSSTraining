@@ -4,11 +4,19 @@
   --secondary: #0A0B5B;
 }
 
+/* AMN - Important note: 
+Defining a font-size in pixels per @media you control the font-size in each type of 
+screen (by default the browser gives 16px size).
+Then using em you increase or decrease proportionally to the defined font-size/@media
+the tags (h, p, a, li, ...)
+*/
+
 /* reset */
 body,p,a,ul,li{
   margin: 0;
   padding: 0;
   text-decoration: none;
+  /* font-size: 32px; AMN - the browser default font-size is 16px. We can change it here. */
 }
 li{
   list-style-type: none;
@@ -45,9 +53,10 @@ input,textarea{
 }
 
 /* fonts */
+/* AMN - From google fonts you can get several types of fonts */
 @font-face {
-  font-family: 'Rubik Regular';
-  src: url("assets/fonts/Rubik-Regular.ttf") format("truetype");
+  font-family: 'Rubik Regular'; /* Name of the font on the CSS - name it as we want to */
+  src: url("assets/fonts/Rubik-Regular.ttf") format("truetype"); /* We downloaded and upload in assets */
 }
 h1,h2,h3,h4{
   color: #DDDBFF;
@@ -57,7 +66,7 @@ h1,h2,h3,h4{
 p,a,li{
   color: #9893D8;
   line-height: 1.4em;
-  font-size: 1em;
+  font-size: 1em; /* em is a unit to measure based in the default browser pixels characters (16 px for a char) and multiplies by 1 */
 }
 h1, h3{
   font-size: 1.2em;
@@ -83,7 +92,7 @@ h4{
 @media screen and (min-width: 960px){
 
   body{
-    font-size: 18px;
+    font-size: 18px; /* We increment the font-size for laptops fron 16ox (default browser) to 18px */
   }
 
 }
@@ -92,7 +101,7 @@ h4{
 @media screen and (min-width: 1200px){
 
   body{
-    font-size: 20px;
+    font-size: 20px; /* We increase the font-size for desktops from 16px (default browser) to 20px */
   }
 
 }
