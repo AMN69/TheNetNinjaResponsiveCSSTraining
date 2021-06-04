@@ -1,6 +1,6 @@
 /* variables */
-:root{
-  --primary: #FFC636;
+:root{ /* Root point to the HTML tag */
+  --primary: #FFC636; /* We can refer to this vars and change the color in all the HTML where they are used */
   --secondary: #0A0B5B;
 }
 
@@ -10,14 +10,15 @@ body,p,a,ul,li{
   padding: 0;
   text-decoration: none;
 }
+
 li{
-  list-style-type: none;
+  list-style-type: none; /* bullets on icon dissapear */
 }
 
 /* base styles */
 body{
   background: var(--secondary);
-  overflow-x: hidden;
+  overflow-x: hidden; /* will avoid scrolling horizontally the screen */
 }
 .button{
   background: none;
