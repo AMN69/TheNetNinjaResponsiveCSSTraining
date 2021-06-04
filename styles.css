@@ -100,7 +100,7 @@ h4{
 /* grid testing */
 .projects{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; /* AMN - in front of px the fractions makes that it doesn't matter how wide the grid is each column is proportional */
   gap: 10px;
 }
 .projects a{
