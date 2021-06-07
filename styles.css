@@ -224,8 +224,8 @@ footer img{
     margin-top: 40px;
   }
   .projects a{
-    grid-column: span 4;
-    display: block;
+    grid-column: span 4; /* AMN - Take 4 columns per each column. As we have 8 columns this means two projects per column */
+    display: block; /* AMN - removes flex from mobile */
     margin: 20px 0;
   }
   .projects a:last-child{
@@ -233,8 +233,8 @@ footer img{
   }
   .projects a *{
     margin: 10px;
-    max-width: 60%;
-    margin: 10px 20%;
+    max-width: 60%; /* AMN - On mobile was 40% */
+    margin: 10px 20%; /* AMN - with max-width at 60% plus left and right margin 20% we cover width 100% */
   }
   .projects h4{
     text-align: center;
@@ -243,7 +243,7 @@ footer img{
     padding: 30px 100px;
   }
   footer{
-    background-size: 20%;
+    background-size: 20%; /* AMN - On mobile was bigger: 40% */
   }
 
 }
