@@ -122,13 +122,13 @@ h4{
   margin: 20px 0;
 }
 .projects a{
-  grid-column: 1/9;
+  grid-column: 1/9; /* AMN - here on mobile we want projects to take all the space horizontally */
   display: flex;
   margin: 20px 0
 }
-.projects a *{
+.projects a *{ /* this * means images and h4 */
   margin: 0 20px;
-  max-width: 40%;
+  max-width: 40%; /* img 40% of the width of columns */
   align-self: center;
 }
 .projects h4{
@@ -147,7 +147,7 @@ h4{
 #skills li{
   padding: 10px;
   background: rgba(0,0,0,0.2);
-  grid-column: span 4;
+  grid-column: span 4; /* AMN - we have two skills per row because we have 8 columns */
   text-align: center;
 }
 #skills img{
