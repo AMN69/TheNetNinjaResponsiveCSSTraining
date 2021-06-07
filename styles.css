@@ -89,9 +89,12 @@ h4{
   border-bottom: 3px solid var(--primary);
   display: inline-block;
 }
+
+/* AMN - on mobile devices we don't want the navbar because users will scroll vertically */
 .site-nav ul{
   display: none;
 }
+
 #welcome{
   padding: 0 20px 20px 20px;
 }
@@ -105,7 +108,7 @@ h4{
   grid-column: 6/9;
 }
 .welcome-img img{
-  width: 200%;
+  width: 200%; /* AMN - This 200% is not of the original humongous img but on the container that contains it. */
 }
 
 /* small tablet styles */
