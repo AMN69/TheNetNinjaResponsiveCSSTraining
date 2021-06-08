@@ -284,19 +284,19 @@ footer img{
   #welcome{
     padding-bottom: 40px;
   }
-  .projects a:nth-child(1){
+  .projects a:nth-child(1){ /* AMN - we take the child 1st */
     grid-column: 2/4;
   }
   .projects a:nth-child(2){
     grid-column: 4/6;
-    padding-top: 140px;
+    padding-top: 140px; /* AMN - provokes an effect of the one in the middle being below */
   }
   .projects a:nth-child(3){
     grid-column: 6/8;
   }
   .projects a *{
-    max-width: 80%;
-    margin: 30px 10%;
+    max-width: 80%; /* AMN - we change the max-width to 80% (from 60%) and... */
+    margin: 30px 10%; /* ...distribute the margin 10% left/right (from 20%) */
   }
   #skills{
     padding: 30px 20px;
@@ -305,7 +305,7 @@ footer img{
     margin: 40px auto;
   }
   #skills li{
-    grid-column: span 2;
+    grid-column: span 2; /* AMN - now the skills are all in one row */
   }
   #skills p{
     max-width: 600px;
