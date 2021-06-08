@@ -344,12 +344,12 @@ footer img{
     grid-column: 7/9;
   }
   .projects a *{
-    max-width: 100%;
+    max-width: 100%; /* AMN from 80% to 100% */
     margin: 30px 0%;
   }
   footer{
     padding: 80px 0;
-    background-size: 30%;
+    background-size: 30%; /* AMN - from 25% */
   }
   footer .copyright{
     grid-column: 1/4;
@@ -358,7 +358,7 @@ footer img{
     grid-column: 6/9;
   }
   footer img{
-    width: 30px;
+    width: 30px; /* AMN - before 20px */
   }
 
 }
